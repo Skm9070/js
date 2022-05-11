@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <script defer src="./unit.js"></script>
+    <script defer src="../theme_changer/script.js"></script>
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: aliceblue;
+      }
+
+      #change-btn {
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        border-radius: 5px;
+      }
+
+      p {
+        color: aliceblue;
+        border: 2px solid antiquewhite;
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      .p {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unit Converter :-</h1>
+    <button id="btn-first">Lenth</button>
+    <button id="btn-second">volume</button>
+    <button id="btn-third">Mass</button>
+    <button id="change-btn">Chang Them</button>
+    <div class="p">
+      <p id="meter-pera"></p>
+      <p id="volume-pera"></p>
+      <p id="mass-pera"></p>
+      <p id="hex-value">Copy the HEX Clolor Code From Here</p>
+    </div>
+
+    <!---  btn => length 
+    user take input in feet
+    and change feet to meter and inch
+    btn =>  volume
+    user input liter
+    and change it in beral ml 
+    btn => mass 
+    user input in <kg>
+        change it in gram pound -->
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Your Color</title>
+  </head>
+  <body>
+    <h1>Change Color</h1>
+    <select name="" id="">
+      <option value="">Select Color</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+    <script>
+      let heading = document.querySelector("h1");
+      document.querySelector("select").onchange = function () {
+        // heading.style.color = this.;
+        document.querySelector("h1").style.color = this.value;
+      };
+    </script>
+  </body>
+</html>

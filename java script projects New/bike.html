@@ -1,0 +1,110 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Image</title>
+    <style>
+      header li a {
+        padding-left: 5%;
+        /* text-align: center; */
+        /* padding-right: 5%; */
+        font-size: large;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        /* position: fixed; */
+
+      }
+      header li {
+        text-align: center;
+      }
+      img {
+        width: 400px;
+        height: 400px;
+        padding-left: 2%;
+        padding-top: 1%;
+        border-radius: 15px;
+      }
+      .display-img{
+        width: 100%;
+        /* position: fixed; */
+        padding-left: 0.50%;
+      
+      }
+      .back{
+        position:absolute;
+        left: 10px;
+      }
+      .next{
+        position: absolute;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <li>
+        <a href="./index.html">Home</a>
+        <a href="./bike.html">Bike</a>
+        <a href="./car.html">Car</a>
+        <a href="./nature.html">Nature</a>
+        <a href="./game.html">Game</a>
+      </li>
+    </header>
+    <div class="full-image">
+      <img
+        class="display-img"
+        src="https://wallpapercave.com/wp/AjbRDTn.jpg"
+      />
+      <div class="overlay"></div>
+      <!-- <button class="dark">Darken</button> -->
+    </div>
+    <button class="back">Back</button>
+    <button class="next">Next</button>
+    <div class="thumbar"></div>
+    <!-- <script src="./army.js"></script> -->
+    <script>
+        let displayImg = document.querySelector(".display-img");
+let thumBar = document.querySelector(".thumbar");
+let btn = document.querySelector(".dark");
+let overLay = document.querySelector(".overlay");
+let back = document.getElementsByClassName(".back");
+let next = document.getElementsByClassName(".next");
+let count = 0;
+let images = ['https://wallpapercave.com/wp/AjbRDTn.jpg','https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a3RtJTIwYmlrZXxlbnwwfHwwfHw%3D&w=1000&q=80','https://w0.peakpx.com/wallpaper/32/657/HD-wallpaper-ktm-bike-rc.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSLlmARNztpbg_bfzjypsTWFUoLNL1tFIKZQ&usqp=CAU','https://images.pexels.com/photos/2393816/pexels-photo-2393816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500','https://bd.gaadicdn.com/processedimages/ducati/panigale-v4/640X309/panigale-v4630ca386c0988.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOHRMHL96XaVXQ9m2OmmpM1wgGMmQcTYrDQ&usqp=CAU','https://c4.wallpaperflare.com/wallpaper/1022/45/253/motobike-heavy-1920x1080-bikes-wallpaper-preview.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiME787MvL5y4dDn7Q30Itf_kTd71QoVu7UA&usqp=CAU','https://c4.wallpaperflare.com/wallpaper/121/626/428/yamaha-fz-10-sportbike-best-bikes-wallpaper-preview.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOB5DBbqHv22QjqWmtRmit13tvW7bOUpJ0AQ&usqp=CAU','https://c4.wallpaperflare.com/wallpaper/68/1022/446/night-blue-the-city-smoke-wallpaper-preview.jpg','https://cdn.wallpapersafari.com/61/44/UtqLhb.jpg','https://c4.wallpaperflare.com/wallpaper/222/410/453/comics-ghost-rider-bike-chain-fire-hd-wallpaper-preview.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESxeRBxtaQnTQbzclvKumpMshXrf_tE4KtQ&usqp=CAU','https://wallpaperaccess.com/full/183162.jpg','https://wallpapercrafter.com/desktop/69180-kawasaki-bikes-racing-kawasaki-ninja.jpg','https://swall.teahub.io/photos/small/6-62771_ninja-bike-full-hd-wallpapers-46-kawasaki-ninja.jpg','https://wallpapers.com/images/hd/racing-green-kawasaki-ninja-motor-bike-d8ckqbhlohcon3av.jpg','https://images.unsplash.com/photo-1622547918989-02ebc7a89eb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHJveWFsJTIwZW5maWVsZHxlbnwwfHwwfHw%3D&w=1000&q=80','https://www.rushlane.com/wp-content/uploads/2022/01/royal-enfield-350cc-modified-army-green-price-launch-17-600x398.jpg','https://www.motorguider.com/wp-content/uploads/2022/02/Royal-Enfield-Bullet-350-2022-Price-in-Pakistan-1200x720.jpg','https://bd.gaadicdn.com/processedimages/yamaha/yzf-r15-v3/640X309/yzf-r15-v36194b5671ad1d.jpg','https://m.economictimes.com/thumb/msid-72437372,width-1200,height-900,resizemode-4,imgsize-403393/bs-vi-compliant-yamaha-yzf-r15-has-features-such-as-side-stand-engine-cut-off-switch-dual-horn-and-radial-tubeless-tyre-at-the-rear-wheel-.jpg','https://i.cdn.newsbytesapp.com/images/l200_7511627103093.jpg?tr=w-720'];
+
+for (let img of images) {
+  const saveImg = document.createElement("img");
+  saveImg.setAttribute("src", img);
+  thumBar.appendChild(saveImg);
+
+  saveImg.addEventListener("click", (photo) => {
+    displayImg.src = photo.target.src;
+  });
+}
+
+// back.addEventListener("click", () => {
+//   for (let nwimg of imges) {
+//     nwimg = document.createElement("img");
+//     nwimg.setAttribute("src", nwimg);
+//     displayImg.src = nwimg[count].src;
+//   }
+// });
+
+    </script>
+  </body>
+  </body>
+</html>
+
+
+
+
+
+
+

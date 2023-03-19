@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Army Image</title>
+    <style>
+      header li a {
+        padding-left: 5%;
+        /* text-align: center; */
+        /* padding-right: 5%; */
+        font-size: large;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        /* position: fixed; */
+
+      }
+      header li {
+        text-align: center;
+      }
+      img {
+        width: 400px;
+        height: 400px;
+        padding-left: 2%;
+        padding-top: 1%;
+        border-radius: 15px;
+      }
+      .display-img{
+        width: 100%;
+        /* position: fixed; */
+        padding-left: 0.50%;
+      
+      }
+      .back{
+        position:absolute;
+        left: 10px;
+      }
+      .next{
+        position: absolute;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <li>
+        <a href="./index.html">Home</a>
+        <a href="./bike.html">Bike</a>
+        <a href="./car.html">Car</a>
+        <a href="./nature.html">Nature</a>
+        <a href="./game.html">Game</a>
+      </li>
+    </header>
+    <div class="full-image">
+      <img
+        class="display-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/3/38/Indian_Air_Force_Garud_Special_Forces_%282%29.jpg"
+      />
+      <div class="overlay"></div>
+      <!-- <button class="dark">Darken</button> -->
+    </div>
+    <button class="back">Back</button>
+    <button class="next">Next</button>
+    <div class="thumbar"></div>
+    <script src="./army.js"></script>
+  </body>
+  </body>
+</html>

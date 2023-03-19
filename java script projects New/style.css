@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  text-align: center;
+  /* margin-top: 1%; */
+  background-image: url("https://www.freewebheaders.com/wp-content/gallery/forests-fields/flowering-field-and-blue-sky-website-header.jpg");
+  height: 300px;
+  border-radius: 5px;
+}
+
+header li a {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+header li {
+  list-style-type: none;
+  padding-top: 2%;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  color: black;
+  /* padding-top: 3%; */
+  text-align: center;
+}
+.pera {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  /* text-align: center; */
+  padding: 0.5%;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5px;
+  font-size: large;
+  font-weight: 300;
+  color: antiquewhite;
+  background-color: rgb(61, 43, 43);
+}

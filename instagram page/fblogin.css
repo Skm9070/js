@@ -1,0 +1,159 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #c0c0c06e;
+}
+.loading-screen {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* You can customize the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.loading-img {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Hide content initially */
+.content {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* main {
+  background-color: silver;
+} */
+
+h1 {
+  margin: 0 auto;
+  background-color: #305996;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.insta_logo {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.insta_logo img {
+  width: 50px;
+}
+.pera {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #a7a39d;
+}
+
+form {
+  width: 300px;
+  text-align: center;
+  /* margin-top: 35px;
+    margin-left: 10px; */
+  margin: 0 auto;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(189, 167, 167);
+  background-color: #f6f3f0;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+
+#password {
+  /* margin-top: 7px; */
+}
+
+.login_button_container {
+  /* margin-top: 20px; */
+  text-align: center;
+  /* margin-right: 10px; */
+  margin: 0 auto;
+  margin-top: 13px;
+  width: 310px;
+}
+
+.login_button {
+  width: 80%;
+  color: white;
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 7px;
+  background-color: #1877f2;
+  border: solid 1px #1877f2;
+  border-radius: 5px;
+}
+.forgot_pass {
+  text-align: center;
+}
+.creat_acc {
+  text-align: center;
+}
+.creat_acc a {
+  color: black;
+}
+footer li {
+  list-style-type: none;
+}
+
+footer {
+  background-color: silver;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer_first {
+  margin-left: 25px;
+}
+.footer_sec {
+  position: absolute;
+  right: 10%;
+}
+
+footer li {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+footer li a {
+  color: #8b8383;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-weight: bolder; */
+}
+
+.copy {
+  /* position: absolute;
+  bottom: 0px; */
+  margin: 0 auto;
+}
+
+.copy p {
+  text-align: center;
+  position: absolute;
+  bottom: 1px;
+  left: 24%;
+  right: 24%;
+}

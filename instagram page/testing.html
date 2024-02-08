@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loading-screen {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff; /* You can customize the background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensure it's above other content */
+      }
+      .login_button_container {
+  /* margin-top: 20px; */
+  text-align: center;
+  /* margin-right: 10px; */
+  margin: 0 auto;
+  margin-top: 13px;
+  width: 310px;
+}
+
+.login_button {
+  width: 80%;
+  color: white;
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 7px;
+  background-color: #1877f2;
+  border: solid 1px #1877f2;
+  border-radius: 5px;
+}
+
+      .loading-img {
+        width: 100%; /* Adjust size as needed */
+        height: auto;
+      }
+
+      /* Hide content initially */
+      .content {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-screen">
+      <img
+        src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=6c09b952x5k77s5903e6hy6a3kmag2f7wuiuzy2tajyy3pje&ep=v1_gifs_search&rid=200w.gif&ct=g"
+        alt="Loading..."
+        class="loading-img"
+      />
+    </div>
+    <div class="login_button_container">
+      <a href="instagramlogin.html"
+        ><button class="login_button">Back to Home</button></a
+      >
+    </div>
+    <div style="text-align: center; margin-top: 25%;">
+      <img width="100%" src="https://www.commercient.com/wp-content/uploads/2019/12/GrouchySilkyAlabamamapturtle-size_restricted.gif" alt="">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hide loading screen after 10 seconds
+        setTimeout(function () {
+          document.querySelector(".loading-screen").style.display = "none";
+          document.querySelector(".content").style.display = "block";
+        }, 5000); // 10 seconds//10000;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook</title>
+    <link rel="stylesheet" href="fblogin.css" />
+  </head>
+  <body>
+    <header>
+      <div class="loading-screen">
+        <img
+          src="https://cdn.dribbble.com/users/954572/screenshots/17357871/media/af709d784f14cb4cff42471e1afadd23.gif"
+          alt="Loading..."
+          class="loading-img"
+        />
+      </div>
+      <div>
+        <h1>facebook</h1>
+      </div>
+    </header>
+    <section>
+      <div class="insta_logo">
+        <img
+          src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-social-platform-icon-png-image_6315976.png"
+          alt=""
+        />
+      </div>
+      <p class="pera">
+        Log in to your Facebook account to connect to instagram
+      </p>
+    </section>
+    <main>
+      <form action="" method="get">
+        <input
+          class="input"
+          type="text"
+          required
+          placeholder="Phone number,username,or email"
+        />
+        <input
+          id="password"
+          class="input"
+          type="password"
+          required
+          placeholder="Password"
+        />
+      </form>
+      <div class="login_button_container">
+        <button class="login_button">Log in</button>
+      </div>
+      <div class="forgot_pass">
+        <p>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+            >Forgotten password ?</a
+          >
+        </p>
+      </div>
+      <div class="creat_acc">
+        <p><a href="#">Creat an account</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_first">
+        <li><a href="#">English (UK)</a></li>
+        <li><a href="#">ਪੰਜਾਬੀ</a></li>
+        <li><a href="#">اردو</a></li>
+        <li><a href="#">తెలుగు</a></li>
+      </div>
+      <div class="footer_sec">
+        <li><a href="#">हिन्दी </a></li>
+        <li><a href="#">ગુજરાતી</a></li>
+        <li><a href="#">मराठी</a></li>
+        <li><a href="#">മലയാളം</a></li>
+      </div>
+      <div class="copy">
+        <p>&copy;2024faccbok</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hide loading screen after 10 seconds
+        setTimeout(function () {
+          document.querySelector(".loading-screen").style.display = "none";
+          document.querySelector(".content").style.display = "block";
+        }, 7000); // 10 seconds
+      });
+    </script>
+  </body>
+</html>

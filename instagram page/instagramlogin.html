@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="loading-screen">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/023/986/555/original/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png"
+          alt="Loading..."
+          class="loading-img"
+        />
+      </div>
+      <div class="instagram_img">
+        <img
+          style="width: 175px"
+          src="https://freelogopng.com/images/all_img/1658587465instagram-name-logo.png"
+          alt=""
+        />
+      </div>
+    </header>
+    <main>
+      <form action="" method="get">
+        <input
+          class="input"
+          type="text"
+          required
+          placeholder="Phone number,username,or email"
+        />
+        <input
+          id="password"
+          class="input"
+          type="password"
+          required
+          placeholder="Password"
+        />
+      </form>
+      <div class="login_button_container">
+        <button class="login_button">Log in</button>
+      </div>
+      <div class="or_name">
+        <p>
+          <span class="or_line">───────── </span> OR
+          <span class="or_line"> ─────────</span>
+        </p>
+      </div>
+      <div class="fb_login">
+        <p>
+          <img
+            class="fb_img"
+            src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-clipart-flat-facebook-logo-png-icon-circle-22.png"
+            alt=""
+          />
+          <span class="login_with_fb">
+            <a href="loginwithfb.html">Log in with Facebook</a></span
+          >
+        </p>
+      </div>
+      <div class="forgot_password">
+        <p><a href="forgotpassword.html">Forgote Password?</a></p>
+      </div>
+    </main>
+    <section>
+      <p class="sign_up_new">
+        Don't have an account?<a href="singup.html">Sign up</a>
+      </p>
+    </section>
+
+    <footer id="footer">
+      <!-- <p>Get the app.</p> -->
+
+      <!-- <div class="downlode_metords_img">
+        <div class="apple_img">
+          <a
+            target="_blank"
+            href="https://apps.apple.com/us/app/instagram/id389801252?vt=lo"
+          >
+            <img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"
+              alt="apple logo"
+          /></a>
+        </div>
+        <div class="android_metords_img">
+          <a
+            target="_blank"
+            href="https://play.google.com/store/search?q=instagram&c=apps&hl=en_IN&gl=US"
+            ><img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+              alt="androide img"
+          /></a>
+        </div>
+      </div> -->
+
+      <div class="footer_links">
+        <p>
+          <li><a href="#">Meta</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Jobes</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">API</a></li>
+        </p>
+        <p>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Instagram Lite</a></li>
+        </p>
+        <li><a href="#">Threads</a></li>
+        <li><a href="#">Contact Uploading</a></li>
+        <li><a href="#">Meta verified</a></li>
+      </div>
+      <div class="copyright">
+        <p>&copy;2024 Instagram from Meta</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hide loading screen after 10 seconds
+        setTimeout(function () {
+          document.querySelector(".loading-screen").style.display = "none";
+          document.querySelector(".content").style.display = "block";
+        }, 3000); // 10 seconds//10000;
+      });
+    </script>
+  </body>
+</html>
